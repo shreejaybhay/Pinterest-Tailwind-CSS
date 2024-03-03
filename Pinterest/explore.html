@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinterest</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="desk-nav" class="sticky top-0 z-50 flex items-center justify-between w-screen h-20 px-4 bg-white">
+
+        <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center">
+                <svg class="g_1 gUZ U9O kVc" fill="red" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"
+                    aria-label="" role="img">
+                    <path
+                        d="M0 12a12 12 0 0 0 7.73 11.22 12 12 0 0 1 .03-3.57l1.4-5.94S8.8 13 8.8 11.94c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.68 0 1.03-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.12 0 3.76-2.24 3.76-5.47 0-2.86-2.06-4.86-5-4.86a5.17 5.17 0 0 0-5.39 5.18c0 1.03.4 2.13.9 2.73q.12.17.08.34l-.34 1.36q-.06.31-.4.16c-1.49-.7-2.42-2.88-2.42-4.63 0-3.77 2.74-7.23 7.9-7.23 4.14 0 7.36 2.95 7.36 6.9 0 4.12-2.6 7.43-6.2 7.43-1.21 0-2.35-.63-2.74-1.37l-.74 2.84a14 14 0 0 1-1.55 3.23A12 12 0 1 0 0 12">
+                    </path>
+                </svg>
+            </div>
+            <div class="text-base font-semibold">
+                <a id="home" class="px-4 py-3 text-white bg-black rounded-full" href="index.html">Home</a>
+                <a id="explore" class="px-4 py-3 rounded-full" href="explore.html">Explore</a>
+                <a id="create" class="px-4 py-3 rounded-full" href="#">Create</a>
+            </div>
+        </div>
+
+        <div id="input-div" class="flex items-center gap-2 bg-[#E9E9E9] rounded-full px-4 h-12 max-w-[850px] w-full relative 
+        ">
+            <div id="search-icon">
+                <svg class="BNH gUZ U9O kVc" fill="#767676" height="16" width="16" viewBox="0 0 24 24"
+                    aria-label="Search icon" role="img">
+                    <path
+                        d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24">
+                    </path>
+                </svg>
+            </div>
+            <input id="search-input" class="bg-transparent w-full h-full outline-none border-none text-[#757575] "
+                type="text" placeholder="Search">
+            <div id="search-close" class="hidden text-2xl cursor-pointer">
+                <i class='bx bxs-x-circle'></i>
+            </div>
+            <div id="search-hide-dev"
+                class="absolute top-0 md:left-0 -left-36 bg-white lg:w-full h-[550px] w-screen -z-10 hidden overflow-hidden overflow-y-scroll rounded-b-xl md:hidden">
+                <div id="search-data" class="w-full h-auto px-3 mt-20 min-h-5">
+
+                </div>
+                <div class="mt-5 ml-10">
+                    <p>Resend Search</p>
+                </div>
+                <div class="flex items-center gap-3 mt-2 ml-10">
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>travel</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>fashion</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>health</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>home decore</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="flex items-center cursor-pointer">
+            <div id="bell-icon" class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center">
+                <svg class="BNH gUZ U9O kVc" fill="#767676" height="24" width="24" viewBox="0 0 24 24"
+                    aria-hidden="true" aria-label="" role="img">
+                    <path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z">
+                    </path>
+                </svg>
+            </div>
+
+            <div id="message-icon"
+                class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center cursor-pointer">
+                <svg class="Hn_ BNH gUZ U9O kVc" fill="#767676" height="24" width="24" viewBox="0 0 24 24"
+                    aria-hidden="true" aria-label="" role="img">
+                    <path
+                        d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center cursor-pointer">
+                <div class="w-6 h-6 bg-[#E9E9E9] rounded-full flex items-center justify-center">
+                    <svg width="100%" fill="#767676" viewBox="-50 -50 100 100" version="1.1"
+                        preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                        <title>Shreejaybhay</title><text font-size="40px" fill="var(--color-text-default)" dy="0.35em"
+                            text-anchor="middle" class="dyH iFc H2s ">S</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="w-6 h-6 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center cursor-pointer">
+                <svg class="BNH gUZ U9O kVc" fill="#767676" height="12" width="12" viewBox="0 0 24 24"
+                    aria-hidden="true" aria-label="" role="img">
+                    <path
+                        d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="w-full my-4 text-center">
+            <h3 class="text-lg font-medium">March 3, 2024</h3>
+            <h1 class="mt-1 text-3xl font-semibold">Stay Inspired</h1>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/17/30/cf/1730cfa0927c4534a8807daebc88e616.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Handpicked happiness</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">DIY floral arrangements to bring on
+                        the
+                        spring</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/f6/52/f0/f652f07bd64c66b4b1112566226dcce5.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Celebrate World Wildlife Day</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Discover the world's most beautiful
+                        animals</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/b8/af/01/b8af0109cb12ee91ea06a0e93ee372fb.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Calming vibes</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Visuals to relax and unwind</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 mt-3 lg:grid-cols-3">
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/0f/e4/36/0fe43605bc032e7cbc6fc971a00ac0a0.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Sweet and subtle</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Soft pink nails you'll love</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/18/eb/e3/18ebe32799f2d5e10b4ccea89c947945.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">It's lit</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Macthbook art ideas</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/2c/41/35/2c413570b3e39227d295bbc119afcb3e.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Brushstroke magic</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Watercolor aesthetic</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full mt-16 mb-5 text-center">
+            <h3 class="text-lg font-medium">Shopping spotlight</h3>
+            <!-- <h1 class="mt-1 text-3xl font-semibold">Stay Inspired</h1> -->
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 mt-3 lg:grid-cols-3">
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/6d/1c/5a/6d1c5a6f26962fc636d9e0a45844bb4d.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Celebrating women everywhere</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Womens's History Month Shop</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/a3/25/9c/a3259c7c99affe0d081cdc9a8456c3a8.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Now trending</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">Shop your celeb outfit aesthetic
+                    </h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+            <div class="w-[444px] h-[333px] rounded-[25px] overflow-hidden relative">
+                <img class="object-cover w-full h-full"
+                    src="https://i.pinimg.com/736x/af/c5/05/afc50551256f92017c5b1c1c9e6b6772.jpg" alt="">
+                <div class="absolute bottom-0 z-10 flex flex-wrap w-full p-5">
+                    <p class="w-full font-medium text-center text-white">Shoppable streetstyle</p>
+                    <h1 class="w-full text-3xl font-semibold text-center text-white">The top trend of NYFW</h1>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-b from-transparent to-black/30">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full mb-5 text-center mt-28">
+            <svg class="Uvi gUZ U9O kVc" height="30" width="30" viewBox="0 0 24 24" aria-label="End of Today tab feed"
+                role="img">
+                <path
+                    d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24M6.37 11.61a1.25 1.25 0 0 1 1.76 0l2.37 2.36 5.37-5.35a1.25 1.25 0 0 1 1.76 1.76L10.5 17.5l-4.13-4.13a1.25 1.25 0 0 1 0-1.76">
+                </path>
+            </svg>
+            <h3 class="mt-5 text-lg font-medium">That's all for today!</h3>
+            <h1 class="mt-1 text-3xl font-semibold">Come back tomorrow for more inspiration</h1>
+
+            <button class="py-2 px-3 bg-[#E9E9E9] hover:bg-[#E2E2E2] rounded-full font-medium mt-16"><a
+                    href="index.html">Go to home
+                    feed</a></button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

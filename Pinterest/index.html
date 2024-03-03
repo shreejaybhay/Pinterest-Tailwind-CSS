@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinterest</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- navbar -->
+    <nav id="desk-nav" class="sticky top-0 z-50 flex items-center justify-between w-screen h-20 px-4 bg-white">
+
+        <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center">
+                <svg class="g_1 gUZ U9O kVc" fill="red" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"
+                    aria-label="" role="img">
+                    <path
+                        d="M0 12a12 12 0 0 0 7.73 11.22 12 12 0 0 1 .03-3.57l1.4-5.94S8.8 13 8.8 11.94c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.68 0 1.03-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.12 0 3.76-2.24 3.76-5.47 0-2.86-2.06-4.86-5-4.86a5.17 5.17 0 0 0-5.39 5.18c0 1.03.4 2.13.9 2.73q.12.17.08.34l-.34 1.36q-.06.31-.4.16c-1.49-.7-2.42-2.88-2.42-4.63 0-3.77 2.74-7.23 7.9-7.23 4.14 0 7.36 2.95 7.36 6.9 0 4.12-2.6 7.43-6.2 7.43-1.21 0-2.35-.63-2.74-1.37l-.74 2.84a14 14 0 0 1-1.55 3.23A12 12 0 1 0 0 12">
+                    </path>
+                </svg>
+            </div>
+            <div class="text-base font-semibold">
+                <a id="home" class="px-4 py-3 text-white bg-black rounded-full" href="index.html">Home</a>
+                <a id="explore" class="px-4 py-3 rounded-full" href="explore.html">Explore</a>
+                <a id="create" class="px-4 py-3 rounded-full" href="#">Create</a>
+            </div>
+        </div>
+
+        <div id="input-div" class="flex items-center gap-2 bg-[#E9E9E9] rounded-full px-4 h-12 max-w-[850px] w-full relative 
+        ">
+            <div id="search-icon">
+                <svg class="BNH gUZ U9O kVc" fill="#767676" height="16" width="16" viewBox="0 0 24 24"
+                    aria-label="Search icon" role="img">
+                    <path
+                        d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24">
+                    </path>
+                </svg>
+            </div>
+            <input id="search-input" class="bg-transparent w-full h-full outline-none border-none text-[#757575] "
+                type="text" placeholder="Search">
+            <div id="search-close" class="hidden text-2xl cursor-pointer">
+                <i class='bx bxs-x-circle'></i>
+            </div>
+            <div id="search-hide-dev"
+                class="absolute top-0 md:left-0 -left-36 bg-white lg:w-full h-[550px] w-screen -z-10 hidden overflow-hidden overflow-y-scroll rounded-b-xl md:hidden">
+                <div id="search-data" class="w-full h-auto px-3 mt-20 min-h-5">
+
+                </div>
+                <div class="mt-5 ml-10">
+                    <p>Resend Search</p>
+                </div>
+                <div class="flex items-center gap-3 mt-2 ml-10">
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>travel</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>fashion</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>health</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 px-3 py-2 bg-gray-200 rounded-full">
+                        <p>home decore</p>
+                        <i class='text-lg bx bx-x'></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="flex items-center cursor-pointer">
+            <div id="bell-icon" class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center">
+                <svg class="BNH gUZ U9O kVc" fill="#767676" height="24" width="24" viewBox="0 0 24 24"
+                    aria-hidden="true" aria-label="" role="img">
+                    <path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z">
+                    </path>
+                </svg>
+            </div>
+
+            <div id="message-icon"
+                class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center cursor-pointer">
+                <svg class="Hn_ BNH gUZ U9O kVc" fill="#767676" height="24" width="24" viewBox="0 0 24 24"
+                    aria-hidden="true" aria-label="" role="img">
+                    <path
+                        d="M18 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-6-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 0a11 11 0 0 0-8.52 17.95l-1.46 5.43a.5.5 0 0 0 .73.55l5.08-2.75A10.98 10.98 0 0 0 23 11 11 11 0 0 0 12 0">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="w-12 h-12 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center cursor-pointer">
+                <div class="w-6 h-6 bg-[#E9E9E9] rounded-full flex items-center justify-center">
+                    <svg width="100%" fill="#767676" viewBox="-50 -50 100 100" version="1.1"
+                        preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                        <title>Shreejaybhay</title><text font-size="40px" fill="var(--color-text-default)" dy="0.35em"
+                            text-anchor="middle" class="dyH iFc H2s ">S</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="w-6 h-6 rounded-full hover:bg-[#F0F0F0] flex items-center justify-center cursor-pointer">
+                <svg class="BNH gUZ U9O kVc" fill="#767676" height="12" width="12" viewBox="0 0 24 24"
+                    aria-hidden="true" aria-label="" role="img">
+                    <path
+                        d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end  -->
+
+    <main class="relative">
+
+        <div class="absolute top-0 z-10 hidden w-screen h-full overlay bg-black/40"></div>
+        <div class="container">
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
